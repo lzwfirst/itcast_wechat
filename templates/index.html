@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	
+	<title>sel</title>
+</head>
+
+<script>
+	$(document).ready(function()
+	{
+		$(".lis").click(function()
+		{
+			$(".none").slideToggle("fast");
+		})
+	});
+</script>
+
+<style type="text/css">
+html
+{
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    width: 100%;
+}
+body
+{
+	background-color: #EBECED;
+	margin: 0;
+}
+ul
+{
+	list-style: none;
+}
+
+.page-header
+{
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 60px;
+	padding: 0px;
+	border: 0px;
+}
+.page-header p
+{
+	font-weight:bold;
+
+}
+
+.top
+{
+	height: 60px;
+	background-color: #F4F4F4;
+	border-bottom: 1px solid #ddd;
+
+}
+
+.top div
+{
+	float: left;
+
+}
+
+#imgsal
+{
+	width: 60px;
+	height: 60px;
+	padding: 20px;
+	text-align: center;
+}
+#imgsalp
+{
+	line-height: 60px;
+	margin: 0px;
+	height: 40px;
+	width: 40px;
+	font-weight:bold;
+	margin-left: 29%;
+}
+
+#imgsalp p
+{
+	margin: 0px;
+	font-size: 17px;
+	color: #787878;
+
+	
+}
+.mfs_as
+{
+	width: 100px;
+	text-align: center;
+	margin-left: 144px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	
+}
+.list-group li
+{
+	margin-left: 8px;
+	width:95%;
+}
+.lis
+{
+
+	position:relative;
+	display:block;
+	padding:20px 25px;
+	margin-bottom:-1px;
+	background-color:#fff;
+	border:1px solid #ddd;
+	height: 60px;
+	color: #828282;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+
+.xyjs_b
+{
+	float: right;
+}
+#textcw
+{
+	font-size: 20px;
+	color: #1F68A9;
+	text-decoration: underline;
+	margin: 0px;
+	/*border-bottom: 1px solid #434343;*/
+
+}
+#textgz
+{
+	font-size: 15px;
+	color: #B79884;
+}
+
+.xyjs_s
+{
+	margin-right: 10px;
+}
+
+#list-g2
+{
+	margin-bottom: 0px;
+}
+.none li
+{
+	margin-left: 10px;
+	padding: 12px 65px;
+	height: 42px;
+	border: 0px;
+	width:94%;
+
+}
+</style>
+
+
+<body>
+
+<div class="backgd">
+	<div class="top">
+		<div id="imgsal" >
+		<img src="{% static 'images/toHome.png' %}" alt = "toHome" style="width:20px"/>
+		</div>
+
+		<div id="imgsalp">
+			<p>登录</p>
+		</div>
+	</div>
+
+	<div class="larg">
+
+		<div class="page-header">
+			<p id="textcw">成为认证学员</p>
+			<p id="textgz">关注自己的学习动态</p>
+		</div>
+		<div class="show">
+			<ul class="list-group">
+				<li class="lis">
+					<img class="xyjs_s" src="{% static 'images/u10.png' %}">
+						学院介绍 
+					<img class="xyjs_b" src="{% static 'images/u14.png' %}"> 
+				</li>
+				<div class="none">
+				<li class="lis">c/c++学院</li>
+				<li class="lis">java学院</li>
+				<li class="lis">网页平面UI设计学院</li>
+				<li class="lis">网络营销学院</li>
+				<li class="lis">PHP学院</li>
+				</div>
+			</ul>
+			<ul class="list-group" id="list-g2">
+				
+					<li class="lis">
+						<img class="xyjs_s" src="{% static 'images/u17.png' %}">
+							关于传智博客
+						<img class="xyjs_b" src="{% static 'images/u14.png' %}">
+					</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
